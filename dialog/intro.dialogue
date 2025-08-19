@@ -1,0 +1,16 @@
+~ start
+System: welcome to [wave]PyQuest[/wave]
+System: In PyQuest you interact in this world using python
+System: Do u know what python is
+- A snake
+	System: idiot
+- I have no idea
+	System: same
+	System: just kidding
+- Yes! its a programming language
+	System: wow pro
+System: Python is a high-level, general-purpose programming language.
+Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically type-checked and garbage-collected.
+System: I know  theres too much yapping
+System: Use W,A,S,D keys to move
+=> END
