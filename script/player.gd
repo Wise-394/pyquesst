@@ -25,7 +25,7 @@ func _ready() -> void:
 	DialogueManager.dialogue_started.connect(_on_dialogue_started)
 	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 
-func _physics_process(_delta: float) -> void:
+func _physics_process(_adelta: float) -> void:
 	match current_state:
 		PlayerState.IDLE:
 			_process_idle()
@@ -41,6 +41,7 @@ func _physics_process(_delta: float) -> void:
 # --- State Behaviors ---
 # =====================================================
 func _process_idle() -> void:
+	velocity = Vector2.ZERO
 	var input_direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	if input_direction != Vector2.ZERO:
 		current_state = PlayerState.MOVE
